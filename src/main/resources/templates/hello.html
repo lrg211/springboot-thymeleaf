@@ -7,7 +7,7 @@
     <body>
         <p th:text="'hello, ' + ${name} + '!'" />
         <span th:text="#{com.vmware.test}"></span><br/>
-        <span th:text="#{com.vmware.test2}"></span><br/>
-        <span th:text="#{com.vmware.test3}"></span><br/>
+        <span th:text="#{com.vmware.test2(${name})}"></span><br/>
+        <span th:text="#{com.vmware.test3('3','4')}"></span><br/>
     </body>
     </html>
